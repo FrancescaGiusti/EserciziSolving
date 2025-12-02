@@ -2,6 +2,8 @@ package it.prova.test;
 
 import it.prova.utility.NumberUtility;
 
+import java.util.Arrays;
+
 public class TestNumberUtility {
     public static void main(String[] args){
         //Test per vedere se l'array fornito è costituito interamente da numeri pari
@@ -18,6 +20,12 @@ public class TestNumberUtility {
         int[] numeri3 = {1, 4, 6, -3, 5};
         int sommaElementiInPosizioneDispari = NumberUtility.sommaElementiInPosizioneDispari(numeri3);
         System.out.println("La somma degli elementi in posizione dispari è: " + sommaElementiInPosizioneDispari);
+
+        //Test per ridurre i valori contenuti in un array di un certo valore.
+        int[] numeri4 = {1, 4, 50, -3, 13};
+        int riduzione = 12;
+        int[] numeriRidotti = NumberUtility.riduciArray(numeri4, riduzione);
+        System.out.println(Arrays.toString(numeriRidotti));
 
     }
 

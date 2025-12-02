@@ -28,4 +28,11 @@ public class NumberUtility {
         }
         return result;
     }
+
+    public static int[] riduciArray(int[] input, int riduzione){
+        for (int i = 0; i < input.length; i++){
+            input[i] = (input[i] - riduzione) > 0 ? (input[i] - riduzione) : 0;
+        }
+        return input;
+    }
 }

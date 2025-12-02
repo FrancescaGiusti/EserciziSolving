@@ -40,5 +40,17 @@ public class TestTelevisore {
         String nome = "Chiara";
         boolean isNomePresenteUnaVolta = Televisore.ePresenteSoloUnaVolta(nomi, nome);
         System.out.println("Il nome " + nome + " è presente solo una volta nell'array? " + isNomePresenteUnaVolta);
+
+        //Test per vedere qual è il televisore più costoso all'interno di un catalogo
+        Televisore[] catalogo = {
+                new Televisore("Samsung", "TV QLED", 349, 43),
+                new Televisore("Philips", "QLED 55PUS8400", 669, 55),
+                new Televisore("LG", "43QN8888", 500.90, 60),
+                new Televisore("Samsung", "TV QLED654TV", 600, 60),
+                new Televisore("Philips", "QLED 55PUS8405", 700, 60),
+                new Televisore("LG", "43QNED77", 329.90, 43),
+        };
+        Televisore televisorePiuCostoso = Televisore.televisorePiuCostoso(catalogo);
+        System.out.println("Ecco le specifiche del televisore più costoso all'interno del catagolo: " + televisorePiuCostoso);
     }
 }
