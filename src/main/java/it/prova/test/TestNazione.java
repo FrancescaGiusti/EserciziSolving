@@ -7,8 +7,8 @@ public class TestNazione {
         //Test per vedere se una nazione è più estesa di un'altra
         Nazione nazione1 = new Nazione("Italia", 302.073, 59_000_000);
         Nazione nazione2 = new Nazione("Spagna", 505.998, 48_196_693);
-        boolean confornto1 = nazione1.piuEstesaDi(nazione2);
-        System.out.println(nazione1.getDenominazione() + " è più estesa di " + nazione2.getDenominazione() + "? " + confornto1);
+        boolean confronto1 = nazione1.piuEstesaDi(nazione2);
+        System.out.println(nazione1.getDenominazione() + " è più estesa di " + nazione2.getDenominazione() + "? " + confronto1);
 
         //Test per vedere se una nazione è più popolosa di un'altra
         Nazione nazione3 = new Nazione("Francia", 543.965, 68_600_000);
@@ -32,8 +32,8 @@ public class TestNazione {
                 new Nazione("Francia", 543.965, 68_600_000)
         };
         Nazione nazione6 = new Nazione("Germania", 357.580, 83_400_693);
-        int nazioniPiuPolosoe = nazione6.dimmiQuanteSonoPiuPopolose(nazioni2);
-        System.out.println("Quante sono le nazioni più popolose di " + nazione6.getDenominazione() + "? " + nazioniPiuPolosoe);
+        int nazioniPiuPopolose = nazione6.dimmiQuanteSonoPiuPopolose(nazioni2);
+        System.out.println("Quante sono le nazioni più popolose di " + nazione6.getDenominazione() + "? " + nazioniPiuPopolose);
 
         //Test per vedere se una nazione ha più abitanti di tutte le altre
         Nazione[] nazioni3 = {new Nazione("Italia", 302.073, 59_000_000),
