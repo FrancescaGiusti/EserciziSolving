@@ -39,6 +39,6 @@ public class TestTelevisore {
         String[] nomi = {"Francesca", "Chiara", "Chiara", "Sofia"};
         String nome = "Chiara";
         boolean isNomePresenteUnaVolta = Televisore.ePresenteSoloUnaVolta(nomi, nome);
-        System.out.println("Il nome " + nome + "è presente solo una volta nell'array? " + isNomePresenteUnaVolta);
+        System.out.println("Il nome " + nome + " è presente solo una volta nell'array? " + isNomePresenteUnaVolta);
     }
 }
