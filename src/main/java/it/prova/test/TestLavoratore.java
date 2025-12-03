@@ -18,7 +18,7 @@ public class TestLavoratore {
         Lavoratore l1 = new Lavoratore("Mario", "Rossi");
         Operaio o1 = new Operaio("Gaia", "Bianchi", 30_000);
         Volontario v1 = new Volontario("Marco", "Verdi", "Unicef");
-        Lavoratore[] lavoratori  = {l1, o1, null, v1};
+        Lavoratore[] lavoratori  = {l1, o1, v1};
         int risultato = Lavoratore.contaQuantiLavoratori(lavoratori);
         System.out.println("Quanti lavoratori ci sono? " + risultato);
     }

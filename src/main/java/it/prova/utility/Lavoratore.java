@@ -34,7 +34,7 @@ public class Lavoratore {
     public static int contaQuantiLavoratori(Lavoratore []input){
         int result = 0;
         for(int i = 0; i < input.length; i ++){
-            if (input[i] instanceof Lavoratore){
+            if (input[i].getClass() == Lavoratore.class){
                 result++;
             }
         }
