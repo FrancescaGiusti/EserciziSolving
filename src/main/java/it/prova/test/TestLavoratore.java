@@ -29,6 +29,5 @@ public class TestLavoratore {
         Lavoratore[] operai  = {l2, o2, v2};
         int risultato2 = Operaio.contaQuantiOperai(operai);
         System.out.println("Quanti operai ci sono? " + risultato2);
-
     }
 }
