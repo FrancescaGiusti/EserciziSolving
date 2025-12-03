@@ -21,5 +21,14 @@ public class TestLavoratore {
         Lavoratore[] lavoratori  = {l1, o1, v1};
         int risultato = Lavoratore.contaQuantiLavoratori(lavoratori);
         System.out.println("Quanti lavoratori ci sono? " + risultato);
+
+        //Test per vedere quanti operai ci sono sempre con instanceof
+        Lavoratore l2 = new Lavoratore("Mario", "Rossi");
+        Operaio o2 = new Operaio("Gaia", "Bianchi", 30_000);
+        Volontario v2 = new Volontario("Marco", "Verdi", "Unicef");
+        Lavoratore[] operai  = {l2, o2, v2};
+        int risultato2 = Operaio.contaQuantiOperai(operai);
+        System.out.println("Quanti operai ci sono? " + risultato2);
+
     }
 }
